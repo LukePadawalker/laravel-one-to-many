@@ -11,7 +11,7 @@ class ProjectController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Project $project)
     {
         $projects = Project::all();
         return view("admin.projects.index", compact("project"));
@@ -76,7 +76,7 @@ class ProjectController extends Controller
         $data = $request->validate([]);
 
 
-        $project->update($data);
+        $request->update($data);
 
         //
     }
