@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Models\Project;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProjectController extends Controller
 {
@@ -34,6 +35,8 @@ class ProjectController extends Controller
     {
         $data = $request->validate();
         //
+
+        $img_path = Storage::put('uploads', $data['image']);
 
         $project = new Project;
 
