@@ -1,6 +1,15 @@
-@extends('layouts.app')
+@include('layouts.app')
+
+<div class="container p-4 ">
+    <p>
+        Lista di Progetti
+        
+    </p>
+    <div class="row-col-2">
+        <a class="btn btn-primary" href="{{route("admin.projects.create")}}">Aggiungi un progetto</a>
+        <a class="btn btn-success" href="{{route("dashboard")}}">Home</a>
+
+    </div>
 
 
-
-<a class="btn btn-primary" href="{{route("admin.projects.create")}}"> Crea un post</a>
-Lista di Progetti
+</div>

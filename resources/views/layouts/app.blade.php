@@ -50,7 +50,7 @@
 
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/admin/posts') }}">{{ __('Posts') }}</a>
+                            <a class="nav-link" href="{{url('/admin/projects') }}">{{ __('Posts') }}</a>
                         </li>
                     </ul>
 
