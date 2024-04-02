@@ -7,7 +7,7 @@
     </p>
     <div class="row-col-2">
         <a class="btn btn-primary" href="{{route("admin.projects.create")}}">Aggiungi un progetto</a>
-        <a class="btn btn-success" href="{{route("dashboard")}}">Home</a>
+        <a class="btn btn-success" href="{{url('/')}}">Home</a>
 
     </div>
 

@@ -92,6 +92,7 @@
         </nav>
 
         <main class="">
+            Luca Padurariu
             @yield('content')
         </main>
     </div>
